@@ -22,5 +22,5 @@ npm i w-jsonview-tree
 ### In a browser(UMD module):
 Add script for w-jsonview-tree.
 ```alias
-<script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@1.0.0/dist/w-jsonview-tree.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@1.0.1/dist/w-jsonview-tree.umd.js"></script>
 ```
