@@ -22,7 +22,7 @@ function viewJsonTree(jsonObj, rootElem, option) {
 
 
     /**
-     * Initialization
+     * Initialize
      * @param {Object} jsonObj 輸入Json物件
      * @param {Element} rootElem 輸入初始化元素
      * @param {Object} [option={}] 輸入設定物件，預設為空物件
