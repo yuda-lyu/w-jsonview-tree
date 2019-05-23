@@ -1,0 +1,84 @@
+.CompCssDJsonViewTree .w-caret-right {
+    transform: rotate(-90deg);
+    width: 0.9rem;
+    height: 0.9rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVEhL7ZC9CYBADEbP2iEEp7JxAPdwBZex02EcQ/0iBCzC/ZlTkDx4RYrLC+cMwzB+QQ1bRRtYwSAbPJQdoRe6bIbS41x32MEg9NULlJakStEBRqMRT44yFF+htDRkdpTJiT+OMilxtSgTE1ePMr54sSgjxYtHmXv8tShD8Qn212QYxnc4dwKskJKEHrOFUQAAAABJRU5ErkJggg==')
+}
+
+.CompCssDJsonViewTree .w-caret-down {
+    display: inline-block;
+    width: 0.9rem;
+    height: 0.9rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVEhL7ZC9CYBADEbP2iEEp7JxAPdwBZex02EcQ/0iBCzC/ZlTkDx4RYrLC+cMwzB+QQ1bRRtYwSAbPJQdoRe6bIbS41x32MEg9NULlJakStEBRqMRT44yFF+htDRkdpTJiT+OMilxtSgTE1ePMr54sSgjxYtHmXv8tShD8Qn212QYxnc4dwKskJKEHrOFUQAAAABJRU5ErkJggg==')
+}
+
+.CompCssDJsonViewTree .wjv-line {
+    margin: 4px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.CompCssDJsonViewTree .wjv-caret-icon {
+    width: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.CompCssDJsonViewTree .wjv-empty-icon {
+    width: 18px;
+}
+
+.CompCssDJsonViewTree .wjv-json-type {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.CompCssDJsonViewTree .wjv-json-key {
+    color: #444;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.CompCssDJsonViewTree .wjv-json-index {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.CompCssDJsonViewTree .wjv-json-separator {
+    color: #aaa;
+}
+
+.CompCssDJsonViewTree .wjv-json-value {
+    margin-left: 8px;
+}
+
+.CompCssDJsonViewTree .wjv-json-number {
+    color: #f9ae58;
+}
+
+.CompCssDJsonViewTree .wjv-json-boolean {
+    color: #ec5f66;
+}
+
+.CompCssDJsonViewTree .wjv-json-string {
+    color: #86b25c;
+}
+
+.CompCssDJsonViewTree .wjv-json-size {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.CompCssDJsonViewTree .wjv-json-hide {
+    display: none;
+}
