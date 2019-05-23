@@ -10,7 +10,7 @@ import './viewJsonTree.css'
  * @param {Object} [option={}] 輸入設定物件，預設為空物件
  * @param {Boolean} [option.expanded=false] 輸入是否預先展開，預設為false
  */
-function viewJsonTree(jsonObj, rootElem, option) {
+function viewJsonTree(jsonObj, rootElem, option = {}) {
 
 
     //default expanded
@@ -23,12 +23,8 @@ function viewJsonTree(jsonObj, rootElem, option) {
 
     /**
      * Initialize
-     * @param {Object} jsonObj 輸入Json物件
-     * @param {Element} rootElem 輸入初始化元素
-     * @param {Object} [option={}] 輸入設定物件，預設為空物件
-     * @param {Boolean} [option.expanded=false] 輸入是否預先展開，預設為false
      */
-    function Init(jsonObj, rootElem, option = {}) {
+    function Init(jsonObj, rootElem, option) {
 
         //get expanded
         if (option) {
