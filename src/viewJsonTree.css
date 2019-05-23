@@ -74,6 +74,10 @@
     color: #86b25c;
 }
 
+.CompCssDJsonViewTree .wjv-json-function {
+    color: #8060d0;
+}
+
 .CompCssDJsonViewTree .wjv-json-size {
     margin-right: 4px;
     margin-left: 4px;
