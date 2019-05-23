@@ -17,7 +17,9 @@ To view some examples for more understanding, visit examples:
 > **Note:** w-jsonview-tree does't depend on any package.
 ```alias
 npm i w-jsonview-tree
-...
+```
+By import:
+```alias
 import jv from 'w-jsonview-tree'
 let data={a1:123,b1:'xyz',c1:[1.2,3.4,'5.6',false],d1:{cid:'WK2WHS',name:'peter',unique:false}}
 let ele=document.querySelector('#id')
@@ -28,7 +30,9 @@ jv(data, element, {expanded:true})
 Add script for w-jsonview-tree.
 ```alias
 <script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@1.0.3/dist/w-jsonview-tree.umd.js"></script>
-...
+```
+Directly use:
+```alias
 let jv=window['w-jsonview-tree']
 let data={a1:123,b1:'xyz',c1:[1.2,3.4,'5.6',false],d1:{cid:'WK2WHS',name:'peter',unique:false}}
 let ele=document.querySelector('#id')
