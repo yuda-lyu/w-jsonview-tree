@@ -21,8 +21,10 @@ npm i w-jsonview-tree
 By import:
 ```alias
 import jv from 'w-jsonview-tree'
+
 let data={a1:123,b1:'xyz',c1:[1.2,3.4,'5.6',false],d1:{cid:'WK2WHS',name:'peter',unique:false}}
 let ele=document.querySelector('#id')
+
 jv(data, element, {expanded:true})
 ```
 
@@ -34,7 +36,9 @@ Add script for w-jsonview-tree.
 Directly use:
 ```alias
 let jv=window['w-jsonview-tree']
+
 let data={a1:123,b1:'xyz',c1:[1.2,3.4,'5.6',false],d1:{cid:'WK2WHS',name:'peter',unique:false}}
 let ele=document.querySelector('#id')
+
 jv(data, element, {expanded:true})
 ```
