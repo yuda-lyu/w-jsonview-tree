@@ -4,7 +4,7 @@ A support package for web developer.
 ![language](https://img.shields.io/badge/language-JavaScript-orange.svg) [![npm version](http://img.shields.io/npm/v/w-jsonview-tree.svg?style=flat)](https://npmjs.org/package/w-jsonview-tree) [![Build Status](https://travis-ci.org/yuda-lyu/w-jsonview-tree.svg?branch=master)](https://travis-ci.org/yuda-lyu/w-jsonview-tree) [![npm download](https://img.shields.io/npm/dt/w-jsonview-tree.svg)](https://npmjs.org/package/w-jsonview-tree) [![license](https://img.shields.io/npm/l/w-jsonview-tree.svg?style=flat)](https://npmjs.org/package/w-jsonview-tree)
 
 ## Documentation
-To view documentation or get support, visit [docs](https://yuda-lyu.github.io/w-jsonview-tree/w-jsonview-tree.html).
+To view documentation or get support, visit [docs](https://yuda-lyu.github.io/w-jsonview-tree/global.html).
 
 ## Example
 To view some examples for more understanding, visit examples:
