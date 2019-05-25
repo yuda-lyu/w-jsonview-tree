@@ -50,7 +50,7 @@ function viewJsonTree(jsonObj, rootElem, option = {}) {
      * @param {Object} config
      */
     function createElement(type, config) {
-        const htmlElement = document.createElement(type)
+        let htmlElement = document.createElement(type)
 
         if (config === undefined) {
             return htmlElement
@@ -82,7 +82,7 @@ function viewJsonTree(jsonObj, rootElem, option = {}) {
      * @return {HTMLElement}
      */
     function createExpandedElement(node) {
-        const iElem = createElement('i')
+        let iElem = createElement('i')
 
         if (node.expanded) {
             iElem.className = 'wicon w-caret-down'
@@ -91,30 +91,30 @@ function viewJsonTree(jsonObj, rootElem, option = {}) {
             iElem.className = 'wicon w-caret-right'
         }
 
-        const caretElem = createElement('div', {
+        let caretElem = createElement('div', {
             className: 'wjv-caret-icon',
             children: [iElem],
         })
 
-        const handleClick = node.toggle.bind(node)
+        let handleClick = node.toggle.bind(node)
         caretElem.addEventListener('click', handleClick)
 
-        const indexElem = createElement('div', {
+        let indexElem = createElement('div', {
             className: 'wjv-json-index',
             content: node.key,
         })
 
-        const typeElem = createElement('div', {
+        let typeElem = createElement('div', {
             className: 'wjv-json-type',
             content: node.type,
         })
 
-        const keyElem = createElement('div', {
+        let keyElem = createElement('div', {
             className: 'wjv-json-key',
             content: node.key,
         })
 
-        const sizeElem = createElement('div', {
+        let sizeElem = createElement('div', {
             className: 'wjv-json-size'
         })
 
@@ -136,13 +136,14 @@ function viewJsonTree(jsonObj, rootElem, option = {}) {
             lineChildren = [caretElem, keyElem, sizeElem]
         }
 
-        const lineElem = createElement('div', {
+        let lineElem = createElement('div', {
             className: 'wjv-line',
             children: lineChildren
         })
 
         if (node.depth > 0) {
-            lineElem.style = 'margin-left: ' + node.depth * 24 + 'px;'
+            //lineElem.style = 'margin-left: ' + node.depth * 24 + 'px;' //IE11 strict模式下無法指派, style為唯讀屬性
+            lineElem.setAttribute('style', 'margin-left: ' + node.depth * 24 + 'px;')
         }
 
         return lineElem
@@ -155,36 +156,31 @@ function viewJsonTree(jsonObj, rootElem, option = {}) {
      * @return {HTMLElement}
      */
     function createNotExpandedElement(node) {
-        const caretElem = createElement('div', {
+        let caretElem = createElement('div', {
             className: 'wjv-empty-icon',
         })
-
-        const keyElem = createElement('div', {
+        let keyElem = createElement('div', {
             className: 'wjv-json-key',
             content: node.key
         })
-
-        const separatorElement = createElement('div', {
+        let separatorElement = createElement('div', {
             className: 'wjv-json-separator',
             content: ':'
         })
-
-        const valueType = ' wjv-json-' + typeof node.value
-        const valueContent = String(node.value)
-        const valueElement = createElement('div', {
+        let valueType = ' wjv-json-' + typeof node.value
+        let valueContent = String(node.value)
+        let valueElement = createElement('div', {
             className: 'wjv-json-value' + valueType,
             content: valueContent
         })
-
-        const lineElem = createElement('div', {
+        let lineElem = createElement('div', {
             className: 'wjv-line',
             children: [caretElem, keyElem, separatorElement, valueElement]
         })
-
         if (node.depth > 0) {
-            lineElem.style = 'margin-left: ' + node.depth * 24 + 'px;'
+            //lineElem.style = 'margin-left: ' + node.depth * 24 + 'px;' //IE11 strict模式下無法指派, style為唯讀屬性
+            lineElem.setAttribute('style', 'margin-left: ' + node.depth * 24 + 'px;')
         }
-
         return lineElem
     }
 
@@ -205,12 +201,12 @@ function viewJsonTree(jsonObj, rootElem, option = {}) {
             depth: 0,
 
             setCaretIconRight() {
-                const icon = this.elem.querySelector('.wicon')
+                let icon = this.elem.querySelector('.wicon')
                 icon.classList.replace('w-caret-down', 'w-caret-right')
             },
 
             setCaretIconDown() {
-                const icon = this.elem.querySelector('.wicon')
+                let icon = this.elem.querySelector('.wicon')
                 icon.classList.replace('w-caret-right', 'w-caret-down')
             },
 
@@ -275,7 +271,7 @@ function viewJsonTree(jsonObj, rootElem, option = {}) {
      */
     function traverseObject(obj, parent) {
         for (let key in obj) {
-            const child = createNode()
+            let child = createNode()
             child.parent = parent
             child.key = key
             child.type = getType(obj[key])
@@ -303,7 +299,7 @@ function viewJsonTree(jsonObj, rootElem, option = {}) {
      * @return {Object}
      */
     function createTree(obj) {
-        const tree = createNode()
+        let tree = createNode()
         tree.type = getType(obj)
         tree.children = []
         tree.expanded = _expanded
