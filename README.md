@@ -6,7 +6,7 @@ A wrapper for json-view.
 [![Build Status](https://travis-ci.org/yuda-lyu/w-jsonview-tree.svg?branch=master)](https://travis-ci.org/yuda-lyu/w-jsonview-tree) [![license](https://img.shields.io/npm/l/w-jsonview-tree.svg?style=flat)](https://npmjs.org/package/w-jsonview-tree) 
 [![gzip file size](http://img.badgesize.io/yuda-lyu/w-jsonview-tree/master/dist/w-jsonview-tree.umd.js.svg?compression=gzip)](https://github.com/yuda-lyu/w-jsonview-tree)
 [![npm download](https://img.shields.io/npm/dt/w-jsonview-tree.svg)](https://npmjs.org/package/w-jsonview-tree) 
-[![jsdelivr download](https://data.jsdelivr.com/v1/package/npm/w-jsonview-tree/badge)](https://www.jsdelivr.com/package/npm/w-jsonview-tree)
+[![jsdelivr download](https://img.shields.io/jsdelivr/npm/hm/w-jsonview-tree.svg)](https://www.jsdelivr.com/package/npm/w-jsonview-tree)
 
 ## Documentation
 To view documentation or get support, visit [docs](https://yuda-lyu.github.io/w-jsonview-tree/global.html).
