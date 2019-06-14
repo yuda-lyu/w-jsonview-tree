@@ -1,8 +1,8 @@
 {
   "name": "w-jsonview-tree",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A wrapper for json-view.",
-  "main": "",
+  "main": "dist/w-jsonview-tree.umd.js",
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.4.4",
