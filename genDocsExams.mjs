@@ -16,11 +16,8 @@ async function getFiles(fd) {
 async function main() {
     //把example裡面cdn更換, 再複製到docs的example內, 作為日後發佈為靜態網站
 
-    //pkg
-    let pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'))
-
     //cdn
-    let cdn = `<script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@${pkg.version}/dist/w-jsonview-tree.umd.js"></script>`
+    let cdn = `<script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@latest/dist/w-jsonview-tree.umd.js"></script>`
 
     //mkdirSync
     if (!fs.existsSync(fd_tar)) {

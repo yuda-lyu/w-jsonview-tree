@@ -24,7 +24,7 @@ async function main() {
     let rdme = getReadme()
 
     //replace
-    let c = rdme.content.replace(/(w-jsonview-tree@)+([0-9]{1}.[0-9]{1}.[0-9]{1})/g, 'w-jsonview-tree@' + pkg.version)
+    let c = rdme.content.replace(/(w-jsonview-tree@)+(\d+.\d+.\d+)/g, 'w-jsonview-tree@' + pkg.version)
 
     //write
     //console.log(c)
