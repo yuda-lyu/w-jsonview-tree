@@ -1,6 +1,6 @@
 {
   "name": "w-jsonview-tree",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A wrapper for json-view.",
   "main": "dist/w-jsonview-tree.umd.js",
   "dependencies": {},
