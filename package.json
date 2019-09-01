@@ -1,6 +1,6 @@
 {
   "name": "w-jsonview-tree",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "A wrapper for json-view.",
   "main": "dist/w-jsonview-tree.umd.js",
   "dependencies": {},
@@ -9,9 +9,11 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.5.5",
     "@babel/register": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
     "core-js": "^3.2.1",
     "docdash": "^1.1.1",
     "eslint": "^6.2.2",
@@ -33,10 +35,12 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-vue": "^5.0.1"
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue-template-compiler": "^2.6.10"
   },
   "scripts": {
-    "test": "mocha --require @babel/register",
+    "test": "./node_modules/.bin/mocha --require @babel/register",
     "deploy": "gh-pages -d docs"
   },
   "repository": {

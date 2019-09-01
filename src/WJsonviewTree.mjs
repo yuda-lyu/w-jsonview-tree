@@ -1,4 +1,4 @@
-import './viewJsonTree.css'
+import './WJsonviewTree.css'
 
 
 /**
@@ -10,7 +10,7 @@ import './viewJsonTree.css'
  * @param {Object} [option={}] 輸入設定物件，預設為空物件
  * @param {Boolean} [option.expanded=false] 輸入是否預先展開，預設為false
  */
-function viewJsonTree(jsonObj, rootElem, option = {}) {
+function WJsonviewTree(jsonObj, rootElem, option = {}) {
 
 
     //default expanded
@@ -344,4 +344,4 @@ function viewJsonTree(jsonObj, rootElem, option = {}) {
 }
 
 
-export default viewJsonTree
+export default WJsonviewTree
