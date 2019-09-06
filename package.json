@@ -1,6 +1,6 @@
 {
   "name": "w-jsonview-tree",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A wrapper for json-view.",
   "main": "dist/w-jsonview-tree.umd.js",
   "dependencies": {},
@@ -37,7 +37,8 @@
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-vue": "^5.0.1",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "w-package-tools": "^1.0.2"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha --require @babel/register",
