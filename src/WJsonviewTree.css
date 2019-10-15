@@ -44,7 +44,7 @@
 }
 
 .CompCssDJsonViewTree .wjv-json-key {
-    color: #444;
+    color: #616161;
     margin-right: 4px;
     margin-left: 4px;
 }
@@ -55,7 +55,7 @@
 }
 
 .CompCssDJsonViewTree .wjv-json-separator {
-    color: #aaa;
+    color: #bdbdbd;
 }
 
 .CompCssDJsonViewTree .wjv-json-value {
@@ -63,19 +63,19 @@
 }
 
 .CompCssDJsonViewTree .wjv-json-number {
-    color: #f9ae58;
+    color: #536dfe;
 }
 
 .CompCssDJsonViewTree .wjv-json-boolean {
-    color: #ec5f66;
+    color: #9ccc65;
 }
 
 .CompCssDJsonViewTree .wjv-json-string {
-    color: #86b25c;
+    color: #ffab40;
 }
 
 .CompCssDJsonViewTree .wjv-json-function {
-    color: #8060d0;
+    color: #e040fb;
 }
 
 .CompCssDJsonViewTree .wjv-json-size {
