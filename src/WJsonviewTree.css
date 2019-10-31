@@ -35,7 +35,8 @@
 }
 
 .CompCssDJsonViewTree .wjv-empty-icon {
-    width: 18px;
+    /* width: 18px; */
+    padding: 0px 9px;
 }
 
 .CompCssDJsonViewTree .wjv-json-type {
