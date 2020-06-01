@@ -1,11 +1,11 @@
 {
   "name": "w-jsonview-tree",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "A wrapper for json-view.",
   "main": "dist/w-jsonview-tree.umd.js",
   "dependencies": {},
   "devDependencies": {
-    "w-package-tools": "^1.0.23"
+    "w-package-tools": "^1.0.25"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha --require @babel/register",
