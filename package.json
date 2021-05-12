@@ -5,10 +5,10 @@
   "main": "dist/w-jsonview-tree.umd.js",
   "dependencies": {},
   "devDependencies": {
-    "w-package-tools": "^1.0.25"
+    "w-package-tools": "^1.0.54"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --require @babel/register",
+    "test": "mocha --parallel --timeout 60000 --experimental-modules --es-module-specifier-resolution=node",
     "deploy": "gh-pages -d docs"
   },
   "repository": {
