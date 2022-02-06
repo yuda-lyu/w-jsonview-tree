@@ -16,6 +16,8 @@ To view some examples for more understanding, visit examples:
 
 > **large data:** [ex-large.html](https://yuda-lyu.github.io/w-jsonview-tree/examples/ex-large.html) [[source code](https://github.com/yuda-lyu/w-jsonview-tree/blob/master/docs/examples/ex-large.html)]
 
+> **formatter:** [ex-formatter.html](https://yuda-lyu.github.io/w-jsonview-tree/examples/ex-formatter.html) [[source code](https://github.com/yuda-lyu/w-jsonview-tree/blob/master/docs/examples/ex-formatter.html)]
+
 ## Installation
 ### Using npm(ES6 module):
 > **Note:** w-jsonview-tree is not dependent on any package.
