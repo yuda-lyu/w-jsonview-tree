@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>formatter for w-jsonview-tree</title>
+    
+    <script src="../dist/w-jsonview-tree.umd.js"></script>
+
+</head>
+<body>
+    
+    <div style="display:flex; font-size:0.8rem; font-family:Microsoft JhengHei,Helvetica">
+
+        <div style="">
+            <div>Source</div>
+            <textarea id="src" style="width:500px; height:94vh; resize:none;"></textarea>
+        </div>
+
+        <div style="padding:20px;">
+            <button onclick="fmt()">formatter</button>
+        </div>
+    
+        <div style="width:100%;">
+            <div>Json tree</div>
+            <div style="height:94vh; overflow-y:auto; border:1px solid #ddd;">
+                <div id="tar"></div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        function j2o(j){
+            let o=null
+            if(j===''){
+                o={
+                    err:'no input'
+                }
+                return o
+            }
+            try{
+                o=JSON.parse(j)
+            }
+            catch(err){
+                o={
+                    err:err.toString()
+                }
+            }
+            return o
+        }
+        function fmt(){
+            let jv=window['w-jsonview-tree']
+            let eleSrc=document.querySelector('#src')
+            let dataJson=eleSrc.value
+            dataJson=j2o(dataJson)
+            console.log('dataJson',dataJson)
+            let ele=document.querySelector('#tar')
+            jv(dataJson,ele,{expanded:true})
+        }
+    </script>
+
+</body>
+</html>
