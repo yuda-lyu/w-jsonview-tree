@@ -1,7 +1,6 @@
 {
   "name": "w-jsonview-tree",
   "version": "1.0.27",
-  "description": "A wrapper for json-view.",
   "main": "dist/w-jsonview-tree.umd.js",
   "dependencies": {},
   "devDependencies": {
@@ -15,7 +14,6 @@
     "type": "git",
     "url": "https://github.com/yuda-lyu/w-jsonview-tree"
   },
-  "homepage": "https://yuda-lyu.github.io/w-jsonview-tree/w-jsonview-tree.html",
   "keywords": [
     "package",
     "tool",
