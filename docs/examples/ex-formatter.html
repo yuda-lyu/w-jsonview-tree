@@ -4,7 +4,9 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <title>formatter for w-jsonview-tree</title>
     
-    <script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@1.0.27/dist/w-jsonview-tree.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/json5@2.2.1/dist/index.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@1.0.28/dist/w-jsonview-tree.umd.js"></script>
 
 </head>
 <body>
@@ -13,7 +15,23 @@
 
         <div>
             <div>Source</div>
-            <textarea id="src" style="width:500px; height:94vh; resize:none;"></textarea>
+            <textarea id="src" style="width:500px; height:94vh; resize:none;">
+                {a1:123,b1:'xyz',c1:[1.2,3.4,'5.6',false],d1:{cid:'WK2WHS',name:'peter',unique:false,
+                 t:
+                 {
+                     // comments
+                     unquoted: 'and you can quote me on that',
+                     singleQuotes: 'I can use "double quotes" here',
+                     lineBreaks: "Look, Mom! \
+                   No \\n's!",
+                     hexadecimal: 0xdecaf,
+                     leadingDecimalPoint: .8675309, andTrailing: 8675309.,
+                     positiveSign: +1,
+                     trailingComma: 'in objects', andIn: ['arrays',],
+                     "backwardsCompatible": "with JSON",
+                   }
+                }}
+            </textarea>
         </div>
 
         <div style="padding:20px;">
@@ -39,7 +57,7 @@
                 return o
             }
             try{
-                o=JSON.parse(j)
+                o=JSON5.parse(j)
             }
             catch(err){
                 o={
