@@ -37,7 +37,7 @@ jv(data, element, {expanded:true})
 ### In a browser(UMD module):
 Add script for w-jsonview-tree.
 ```alias
-<script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@1.0.28/dist/w-jsonview-tree.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@1.0.29/dist/w-jsonview-tree.umd.js"></script>
 ```
 Directly use:
 ```alias

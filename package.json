@@ -1,10 +1,10 @@
 {
   "name": "w-jsonview-tree",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "main": "dist/w-jsonview-tree.umd.js",
   "dependencies": {},
   "devDependencies": {
-    "w-package-tools": "^1.0.66"
+    "w-package-tools": "^1.0.69"
   },
   "scripts": {
     "test": "mocha --parallel --timeout 60000 --experimental-modules --es-module-specifier-resolution=node",
