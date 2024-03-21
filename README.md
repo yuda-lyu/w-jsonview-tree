@@ -5,6 +5,7 @@ A wrapper for json-view.
 [![npm version](http://img.shields.io/npm/v/w-jsonview-tree.svg?style=flat)](https://npmjs.org/package/w-jsonview-tree) 
 [![gzip file size](http://img.badgesize.io/yuda-lyu/w-jsonview-tree/master/dist/w-jsonview-tree.umd.js.svg?compression=gzip)](https://github.com/yuda-lyu/w-jsonview-tree)
 [![npm download](https://img.shields.io/npm/dt/w-jsonview-tree.svg)](https://npmjs.org/package/w-jsonview-tree) 
+[![npm download](https://img.shields.io/npm/dm/w-jsonview-tree.svg)](https://npmjs.org/package/w-jsonview-tree) 
 [![jsdelivr download](https://img.shields.io/jsdelivr/npm/hm/w-jsonview-tree.svg)](https://www.jsdelivr.com/package/npm/w-jsonview-tree)
 
 ## Documentation
@@ -37,7 +38,7 @@ jv(data, element, {expanded:true})
 ### In a browser(UMD module):
 Add script for w-jsonview-tree.
 ```alias
-<script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@1.0.29/dist/w-jsonview-tree.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@1.0.30/dist/w-jsonview-tree.umd.js"></script>
 ```
 Directly use:
 ```alias
