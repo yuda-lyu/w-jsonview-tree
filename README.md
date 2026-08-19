@@ -39,7 +39,7 @@ jv(data, element, {expanded:true})
 
 Add script for w-jsonview-tree.
 ```alias
-<script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@1.0.34/dist/w-jsonview-tree.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/w-jsonview-tree@1.0.35/dist/w-jsonview-tree.umd.js"></script>
 ```
 
 Directly use:
