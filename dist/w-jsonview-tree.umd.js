@@ -1,5 +1,5 @@
 /*!
- * w-jsonview-tree v1.0.38
+ * w-jsonview-tree v1.0.39
  * (c) 2018-2021 yuda-lyu(semisphere)
  * Released under the MIT License.
  */
